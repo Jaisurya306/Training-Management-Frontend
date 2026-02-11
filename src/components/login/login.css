@@ -1,0 +1,91 @@
+.main {
+  height: auto;  
+  min-height: 90vh;
+  padding-top: 90px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+
+
+.logincontiner {
+  background: var(--background);
+  backdrop-filter: blur(1px);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  margin-top: 5rem;
+  width: 43rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: var(--secondary) ;
+  animation: fadeIn 0.5s ease;
+  transition: all 0.3s ease;
+  /* z-index: -1; */
+}
+
+.logincontiner:hover {
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.logincontiner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+   color: var(--secondary) ;
+  margin-bottom: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logincontiner p {
+  /* font-size: 0.95rem; */
+   color: var(--secondary) ;
+  margin-top: 1rem;
+}
+
+.logincontiner a {
+   color: var(--secondary) ;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logincontiner a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 1.2rem;                      
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;     
+  }
+}
+

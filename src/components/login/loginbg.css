@@ -1,0 +1,27 @@
+.loginbg{
+    background-image: url("/imgs/loginbg.png");
+      border-radius: 15px;
+     height: 80vh;  
+  min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+   
+}
+
+.loginbgcard {
+    border-radius: 20px;
+    width: 60%;
+    padding: 2rem;
+    text-align: center;
+     margin-top: 1rem;
+    /* Transparent Card (Glass effect) */
+     background: rgba(9, 245, 233, 0.15); 
+    backdrop-filter: blur(46px);
+    -webkit-backdrop-filter: blur(46px);
+    border: 1px solid rgba(49, 48, 48, 0.25);
+
+    animation: fadeIn 0.6s ease;
+}
+

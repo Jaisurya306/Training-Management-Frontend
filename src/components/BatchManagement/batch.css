@@ -1,0 +1,135 @@
+.batch-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 5rem auto 40px 110px;
+  padding: 25px;
+  background: #f4fcfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.batch-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00897B;
+}
+
+.batch-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #023d2b;
+  font-size: 15px;
+}
+
+.batch-input:focus {
+  border-color: #036353;
+  outline: none;
+}
+
+.time-row {
+  display: flex;
+  gap: 15px;
+}
+
+.time-row div {
+  flex: 1;
+}
+
+.add-btn {
+  padding: 10px 15px;
+  background-color: #00897B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #02645a;
+}
+
+.batch-list {
+  margin-top: 25px;
+}
+
+.batch-card {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.batch-card strong {
+  color: #00897B;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.empty-text {
+  color: gray;
+}
+
+/* ========================= */
+/* TABLET RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .batch-container {
+    max-width: 90%;
+  }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .batch-container {
+    margin: 4rem auto 30px auto;
+    padding: 18px;
+  }
+
+  .time-row {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .batch-container {
+    padding: 15px;
+  }
+
+  .batch-container h2 {
+    font-size: 18px;
+  }
+
+  .batch-input {
+    font-size: 14px;
+  }
+
+  .batch-card {
+    font-size: 14px;
+  }
+}

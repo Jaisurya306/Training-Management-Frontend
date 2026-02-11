@@ -1,0 +1,15 @@
+:root {
+  --primary:#00897B ;
+  --secondary: #004D40;
+  --background:#d4f1ec  ;
+  --card-bg:#FFFFFF ;
+  --text-dark:#1A1A1A ;
+  --success: #43A047;
+  --warning: #FB8C00;
+  --error: #E53935;
+}
+
+/* Primary: #00897B (Teal)
+Secondary: #004D40 (Dark Teal)
+Background: #ECEFF1
+Text: #1A1A1A */

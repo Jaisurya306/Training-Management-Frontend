@@ -1,0 +1,139 @@
+.course-container {
+  width: 100%;
+  margin: 40px auto;
+  margin-top: 5rem;
+  margin-left: 13rem;
+  padding: 25px;
+    background: #f4fcfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
+}
+/* .course-structure{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+} */
+.course-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00897B;
+}
+
+.course-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #023d2b;
+}
+.course-input:focus{
+    border-color: #036353;
+}
+
+.subjects-section {
+  margin-bottom: 15px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.add-btn {
+  padding: 10px 15px;
+  background-color: #00897B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.add-btn:hover {
+  background-color:#02645a;
+}
+
+.course-list {
+  margin-top: 20px;
+}
+
+.course-card {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.empty-text {
+  color: gray;
+}
+.course-card strong{
+    color:#00897B;
+}
+
+
+
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .course-container {
+    margin: 20px auto;
+    margin-top: 4rem;
+    margin-left: 0;
+    width: 95%;
+    padding: 18px;
+  }
+
+  .course-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .add-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .course-card {
+    padding: 10px;
+  }
+
+  .checkbox-label {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .course-container {
+    margin-top: 3rem;
+    padding: 15px;
+  }
+
+  .course-container h2 {
+    font-size: 18px;
+  }
+
+  .course-input {
+    font-size: 13px;
+  }
+
+  .checkbox-label {
+    font-size: 12px;
+  }
+}
