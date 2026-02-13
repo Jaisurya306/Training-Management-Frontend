@@ -119,10 +119,10 @@
 }
 
 /* Small Mobile Devices */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .course-container {
-    margin-top: 3rem;
-    padding: 15px;
+   position: absolute;
+   right: 3px;
   }
 
   .course-container h2 {

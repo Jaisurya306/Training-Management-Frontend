@@ -3,11 +3,11 @@ import Sidebar from '../sidebar/Sidebar'
 import { Outlet } from 'react-router-dom'
 import './home.css'
 
-function Home() {
+function Home({setIslogin}) {
   return (
     <div>
        <div className='admin-layout'>
-          <div><Sidebar/></div>
+          <div><Sidebar setIslogin={setIslogin}/></div>
           <div> <Outlet/> </div>
           
         </div>

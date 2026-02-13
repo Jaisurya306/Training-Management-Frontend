@@ -72,8 +72,9 @@
   color: gray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .student-container {
-    padding: 18px;
+    position: absolute;
+    right: 40px;
   }
 }

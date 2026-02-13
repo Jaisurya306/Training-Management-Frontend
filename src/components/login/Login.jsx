@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/button/Button';
 import Text from '../../components/text/Text';
 import Input from '../../components/input/Input';
-function Login({setIsslogin}) {
+function Login({setIslogin}) {
     const [email,setEmail]=useState("jai@gmail.com");
     const[password,setPassword]=useState("1234");
    const navigate = useNavigate();
@@ -16,11 +16,12 @@ const handleLogin = (e) => {
   e.preventDefault();
 
   if (email === "jai@gmail.com" && password === "1234") {
-    alert("Login Successfully");
-
+   
+  
     localStorage.setItem("isLoggedIn", "true");
-    setIsslogin(true); 
+    setIslogin(true); 
     navigate("/dashboard");
+     alert("Login Successfully");
   } else {
     alert("Password was incorrect, please check!!!");
   }

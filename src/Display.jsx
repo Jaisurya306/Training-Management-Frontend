@@ -9,33 +9,36 @@ import StudentManagement from "./components/StudentManagement/StudentManagement"
 import Dashboard from "./components/Dashboard/Dashboard";
 
 function Display() {
-  const [isslogin, setIsslogin] = useState(false);
+   const [islogin, setIslogin] = useState(false);
 
- 
-  useEffect(() => {
-    const loginStatus = localStorage.getItem("isLoggedIn");
-    if (loginStatus === "true") {
-      setIsslogin(true);
+   useEffect(() => {
+    let loginStatus = localStorage.getItem("isLoggedIn");
+
+    if (!loginStatus) {
+      localStorage.setItem("isLoggedIn", "false");
+      setIslogin(false);
+    } else {
+      setIslogin(loginStatus === "true");
     }
-  }, []);
-
+  }, []); 
   return (
     <Routes>
       {/* Login Page */}
       <Route
         path="/"
         element={
-          isslogin ? (
+          islogin ? (
             <Navigate to="/dashboard" />
           ) : (
-            <Login setIsslogin={setIsslogin} />
+            <Login setIslogin={setIslogin} />
           )
         }
       />
 
       
-      {isslogin && (
-        <Route path="/" element={<Home />}>
+      {islogin && (
+        <Route path="/" element={<Home setIslogin={setIslogin} />}>
+
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="subjects" element={<SubjectManagement />} />
           <Route path="courses" element={<CourseManagement />} />
@@ -45,7 +48,7 @@ function Display() {
       )}
 
     
-      {!isslogin && <Route path="*" element={<Navigate to="/" />} />}
+      {!islogin && <Route path="*" element={<Navigate to="/" />} />}
     </Routes>
   );
 }

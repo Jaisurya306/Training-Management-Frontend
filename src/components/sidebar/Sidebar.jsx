@@ -32,8 +32,8 @@ import LogoutPopup from "../logout/Logout";
 
 const drawerWidth = 250;
 
-function Sidebar(props) {
-  const { window } = props;
+function Sidebar({window,setIslogin}) {
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -50,12 +50,11 @@ function Sidebar(props) {
     { text: "Student Management", path: "/students", icon:  <GroupIcon />},
   ];
 
-  const handleLogout = () => {
-localStorage.setItem("isLoggedIn", "false");
-  
+ const handleLogout = () => {
+    localStorage.setItem("isLoggedIn", "false");
+    setIslogin(false);
   navigate("/");
-  window.location.reload(); 
-};
+  };
 
   const drawer = (
     <Box sx={{ height: "100%", display: "flex", flexDirection: "column" }}>

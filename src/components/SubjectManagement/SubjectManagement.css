@@ -114,8 +114,12 @@
 @media (max-width: 600px) {
   .subject-input-box {
     flex-direction: column;
+  
   }
-
+.subject-container{
+  position: absolute;
+  right: 3px;
+}
   .subject-input-box button {
     width: 100%;
   }

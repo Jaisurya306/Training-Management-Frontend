@@ -116,9 +116,10 @@
 /* SMALL MOBILE */
 /* ========================= */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .batch-container {
-    padding: 15px;
+    position: absolute;
+    right: 3px;
   }
 
   .batch-container h2 {
